@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeOS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+
+            <div>
+                <h2>LifeOS</h2>
+                <p>Your life, organized.</p>
+            </div>
+        </div>
+
+
+        <nav>
+
+            <p class="section-title">MAIN</p>
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                My Day
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-calendar"></i>
+                Calendar
+            </a>
+
+
+            <p class="section-title">PRODUCTIVITY</p>
+
+            <a href="#">
+                <i class="fa-solid fa-list-check"></i>
+                Tasks
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bullseye"></i>
+                Goals
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-repeat"></i>
+                Habits
+            </a>
+
+
+            <p class="section-title">MORE</p>
+
+            <a href="#">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Study
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-heart-pulse"></i>
+                Health
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-shirt"></i>
+                Wardrobe
+            </a>
+
+        </nav>
+
+
+        <div class="profile">
+
+            <div class="profile-image">
+                A
+            </div>
+
+            <div>
+                <strong>Asunita</strong>
+                <p>My LifeOS</p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search...">
+
+            </div>
+
+
+            <div class="top-right">
+
+                <button class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+
+                <div class="avatar">
+                    A
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- GREETING -->
+
+            <div class="greeting">
+
+                <div>
+
+                    <p class="date">
+                        Wednesday, September 9
+                    </p>
+
+                    <h1>
+                        Good evening, Asunita 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening today.
+                    </p>
+
+                </div>
+
+
+                <button class="quick-add">
+                    <i class="fa-solid fa-plus"></i>
+                    Quick Add
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Today's Tasks</h2>
+                        <p>Things you need to complete today.</p>
+                    </div>
+
+                    <span class="task-count">
+                        3 Tasks
+                    </span>
+
+                </div>
+
+
+                <div class="task-list">
+
+
+                    <div class="task">
+
+                        <div class="check completed">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div class="task-info">
+
+                            <h3>Complete Java practice</h3>
+
+                            <p>
+                                Study · 10:00 AM
+                            </p>
+
+                        </div>
+
+                        <span class="priority medium">
+                            Medium
+                        </span>
+
+                    </div>
+
+
+                    <div class="task">
+
+                        <div class="check"></div>
+
+                        <div class="task-info">
+
+                            <h3>Complete LifeOS UI</h3>
+
+                            <p>
+                                Personal · 4:00 PM
+                            </p>
+
+                        </div>
+
+                        <span class="priority high">
+                            High
+                        </span>
+
+                    </div>
+
+
+                    <div class="task">
+
+                        <div class="check"></div>
+
+                        <div class="task-info">
+
+                            <h3>Buy groceries</h3>
+
+                            <p>
+                                Personal · 6:00 PM
+                            </p>
+
+                        </div>
+
+                        <span class="priority low">
+                            Low
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button class="add-task">
+                    <i class="fa-solid fa-plus"></i>
+                    Add a task
+                </button>
+
+            </div>
+
+
+            <div class="two-column">
+
+                <div class="card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>My Goals</h2>
+                            <p>Things you're working towards.</p>
+                        </div>
+
+                        <i class="fa-solid fa-bullseye icon"></i>
+
+                    </div>
+
+
+                    <div class="goal">
+
+                        <div class="goal-top">
+
+                            <span>
+                                Learn Java
+                            </span>
+
+                            <strong>
+                                70%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div style="width:70%"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="goal">
+
+                        <div class="goal-top">
+
+                            <span>
+                                Complete LifeOS
+                            </span>
+
+                            <strong>
+                                40%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div style="width:40%"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="goal">
+
+                        <div class="goal-top">
+
+                            <span>
+                                Read 5 books
+                            </span>
+
+                            <strong>
+                                60%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div style="width:60%"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="outline-button">
+                        + Add Goal
+                    </button>
+
+                </div>
+
+
+
+                <!-- HABITS -->
+
+                <div class="card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>Today's Habits</h2>
+                            <p>Keep your streak alive.</p>
+                        </div>
+
+                        <i class="fa-solid fa-fire icon"></i>
+
+                    </div>
+
+
+                    <div class="habit">
+
+                        <div class="habit-left">
+
+                            <div class="habit-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+
+                            <div>
+                                <strong>Read</strong>
+                                <p>20 minutes</p>
+                            </div>
+
+                        </div>
+
+                        <div class="habit-check">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="habit">
+
+                        <div class="habit-left">
+
+                            <div class="habit-icon">
+                                <i class="fa-solid fa-person-walking"></i>
+                            </div>
+
+                            <div>
+                                <strong>Exercise</strong>
+                                <p>30 minutes</p>
+                            </div>
+
+                        </div>
+
+                        <div class="habit-check">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="habit">
+
+                        <div class="habit-left">
+
+                            <div class="habit-icon">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+
+                            <div>
+                                <strong>Drink Water</strong>
+                                <p>8 glasses</p>
+                            </div>
+
+                        </div>
+
+                        <div class="habit-check empty">
+                        </div>
+
+                    </div>
+
+
+                    <button class="outline-button">
+                        View Habits
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="card calendar-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h2>Upcoming Events</h2>
+
+                        <p>
+                            Important things coming up.
+                        </p>
+
+                    </div>
+
+                    <button class="text-button">
+                        View Calendar
+                    </button>
+
+                </div>
+
+
+                <div class="events">
+
+
+                    <div class="event">
+
+                        <div class="event-date">
+
+                            <strong>
+                                10
+                            </strong>
+
+                            <span>
+                                SEP
+                            </span>
+
+                        </div>
+
+
+                        <div class="event-info">
+
+                            <h3>
+                                Java Assignment
+                            </h3>
+
+                            <p>
+                                📚 Study · 11:59 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="event">
+
+                        <div class="event-date">
+
+                            <strong>
+                                12
+                            </strong>
+
+                            <span>
+                                SEP
+                            </span>
+
+                        </div>
+
+
+                        <div class="event-info">
+
+                            <h3>
+                                Project Meeting
+                            </h3>
+
+                            <p>
+                                💼 Work · 2:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="event">
+
+                        <div class="event-date">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                SEP
+                            </span>
+
+                        </div>
+
+
+                        <div class="event-info">
+
+                            <h3>
+                                Submit Project
+                            </h3>
+
+                            <p>
+                                🎯 Important · 5:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
