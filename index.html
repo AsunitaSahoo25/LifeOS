@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LifeOS</title>
+    <title>LifeOS - Personal Life Organizer</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,80 +16,106 @@
 
 <body>
 
+    <!-- ================= SIDEBAR ================= -->
+
     <aside class="sidebar">
 
         <div class="logo">
-            <i class="fa-solid fa-layer-group"></i>
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
 
             <div>
                 <h2>LifeOS</h2>
-                <p>Your life, organized.</p>
+                <span>Your life, organized.</span>
             </div>
         </div>
 
 
-        <nav>
+        <nav class="navigation">
 
-            <p class="section-title">MAIN</p>
+            <p class="nav-title">MAIN</p>
 
-            <a href="#" class="active">
+            <a href="#" class="nav-link active">
                 <i class="fa-solid fa-house"></i>
-                My Day
+                <span>My Day</span>
             </a>
 
-            <a href="#">
+            <a href="#" class="nav-link">
                 <i class="fa-solid fa-calendar"></i>
-                Calendar
+                <span>Calendar</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
             </a>
 
 
-            <p class="section-title">PRODUCTIVITY</p>
+            <p class="nav-title">LIFE</p>
 
-            <a href="#">
+            <a href="#" class="nav-link">
                 <i class="fa-solid fa-list-check"></i>
-                Tasks
+                <span>Planning</span>
             </a>
 
-            <a href="#">
-                <i class="fa-solid fa-bullseye"></i>
-                Goals
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-repeat"></i>
-                Habits
-            </a>
-
-
-            <p class="section-title">MORE</p>
-
-            <a href="#">
+            <a href="#" class="nav-link">
                 <i class="fa-solid fa-graduation-cap"></i>
-                Study
+                <span>Study / Work</span>
             </a>
 
-            <a href="#">
+            <a href="#" class="nav-link">
                 <i class="fa-solid fa-heart-pulse"></i>
-                Health
+                <span>Health & Wellness</span>
             </a>
 
-            <a href="#">
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                <span>Personal Life</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Household</span>
+            </a>
+
+
+            <p class="nav-title">LIFESTYLE</p>
+
+            <a href="#" class="nav-link">
                 <i class="fa-solid fa-shirt"></i>
-                Wardrobe
+                <span>Wardrobe</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Insights</span>
+            </a>
+
+
+            <p class="nav-title">OTHER</p>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
             </a>
 
         </nav>
 
 
-        <div class="profile">
+        <div class="sidebar-bottom">
 
-            <div class="profile-image">
-                A
-            </div>
+            <div class="upgrade-card">
 
-            <div>
-                <strong>Asunita</strong>
-                <p>My LifeOS</p>
+                <i class="fa-solid fa-star"></i>
+
+                <h4>Make life easier</h4>
+
+                <p>
+                    Keep everything you need in one place.
+                </p>
+
             </div>
 
         </div>
@@ -97,7 +123,8 @@
     </aside>
 
 
-    <!-- MAIN CONTENT -->
+
+    <!-- ================= MAIN ================= -->
 
     <main class="main">
 
@@ -105,25 +132,44 @@
 
         <header class="topbar">
 
-            <div class="search">
+            <div class="mobile-logo">
+                <i class="fa-solid fa-layer-group"></i>
+                LifeOS
+            </div>
+
+            <div class="search-box">
 
                 <i class="fa-solid fa-magnifying-glass"></i>
 
                 <input
                     type="text"
-                    placeholder="Search...">
+                    placeholder="Search your life...">
+
+                <span>⌘ K</span>
 
             </div>
 
 
-            <div class="top-right">
+            <div class="top-actions">
 
-                <button class="notification">
+                <button class="icon-button">
                     <i class="fa-solid fa-bell"></i>
+                    <span class="red-dot"></span>
                 </button>
 
-                <div class="avatar">
-                    A
+                <div class="profile">
+
+                    <div class="profile-image">
+                        A
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Asunita</strong>
+                        <span>Personal</span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
                 </div>
 
             </div>
@@ -131,18 +177,19 @@
         </header>
 
 
-        <!-- CONTENT -->
+
+        <!-- ================= CONTENT ================= -->
 
         <section class="content">
 
 
-            <!-- GREETING -->
+            <!-- WELCOME -->
 
-            <div class="greeting">
+            <div class="welcome-section">
 
                 <div>
 
-                    <p class="date">
+                    <p class="small-date">
                         Wednesday, September 9
                     </p>
 
@@ -150,417 +197,683 @@
                         Good evening, Asunita 👋
                     </h1>
 
-                    <p>
-                        Here's what's happening today.
+                    <p class="welcome-text">
+                        Here's everything you need to know about your day.
                     </p>
 
                 </div>
 
 
-                <button class="quick-add">
+                <button class="add-button">
                     <i class="fa-solid fa-plus"></i>
                     Quick Add
                 </button>
 
             </div>
 
-            <div class="card">
 
-                <div class="card-heading">
+
+            <!-- ================= OVERVIEW ================= -->
+
+            <div class="overview-grid">
+
+                <div class="overview-card">
+
+                    <div class="overview-icon purple">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
 
                     <div>
-                        <h2>Today's Tasks</h2>
-                        <p>Things you need to complete today.</p>
+                        <span>Today's Tasks</span>
+                        <h2>8</h2>
                     </div>
 
-                    <span class="task-count">
-                        3 Tasks
-                    </span>
+                    <small>5 completed</small>
 
                 </div>
 
 
-                <div class="task-list">
+                <div class="overview-card">
 
-
-                    <div class="task">
-
-                        <div class="check completed">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-
-                        <div class="task-info">
-
-                            <h3>Complete Java practice</h3>
-
-                            <p>
-                                Study · 10:00 AM
-                            </p>
-
-                        </div>
-
-                        <span class="priority medium">
-                            Medium
-                        </span>
-
+                    <div class="overview-icon blue">
+                        <i class="fa-solid fa-clock"></i>
                     </div>
 
-
-                    <div class="task">
-
-                        <div class="check"></div>
-
-                        <div class="task-info">
-
-                            <h3>Complete LifeOS UI</h3>
-
-                            <p>
-                                Personal · 4:00 PM
-                            </p>
-
-                        </div>
-
-                        <span class="priority high">
-                            High
-                        </span>
-
+                    <div>
+                        <span>Focus Time</span>
+                        <h2>3h 20m</h2>
                     </div>
 
-
-                    <div class="task">
-
-                        <div class="check"></div>
-
-                        <div class="task-info">
-
-                            <h3>Buy groceries</h3>
-
-                            <p>
-                                Personal · 6:00 PM
-                            </p>
-
-                        </div>
-
-                        <span class="priority low">
-                            Low
-                        </span>
-
-                    </div>
+                    <small>+25% this week</small>
 
                 </div>
 
 
-                <button class="add-task">
-                    <i class="fa-solid fa-plus"></i>
-                    Add a task
-                </button>
+                <div class="overview-card">
+
+                    <div class="overview-icon green">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <div>
+                        <span>Goals</span>
+                        <h2>4/6</h2>
+                    </div>
+
+                    <small>67% completed</small>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon orange">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <div>
+                        <span>Habit Streak</span>
+                        <h2>12 days</h2>
+                    </div>
+
+                    <small>Keep going!</small>
+
+                </div>
 
             </div>
 
 
-            <div class="two-column">
 
-                <div class="card">
+            <!-- ================= MAIN GRID ================= -->
 
-                    <div class="card-heading">
+            <div class="dashboard-grid">
+
+
+                <!-- TODAY'S TASKS -->
+
+                <div class="card tasks-card">
+
+                    <div class="card-header">
 
                         <div>
-                            <h2>My Goals</h2>
-                            <p>Things you're working towards.</p>
+                            <h3>Today's Tasks</h3>
+                            <p>Things you need to get done.</p>
                         </div>
 
-                        <i class="fa-solid fa-bullseye icon"></i>
+                        <button class="text-button">
+                            View all
+                        </button>
 
                     </div>
 
 
-                    <div class="goal">
+                    <div class="task-list">
 
-                        <div class="goal-top">
 
-                            <span>
-                                Learn Java
+                        <div class="task completed">
+
+                            <div class="checkbox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div class="task-content">
+
+                                <strong>Complete Java practice</strong>
+
+                                <span>
+                                    Study · 10:00 AM
+                                </span>
+
+                            </div>
+
+                            <span class="priority medium">
+                                Medium
                             </span>
 
-                            <strong>
-                                70%
-                            </strong>
-
                         </div>
 
-                        <div class="progress">
-
-                            <div style="width:70%"></div>
-
-                        </div>
-
-                    </div>
 
 
-                    <div class="goal">
+                        <div class="task">
 
-                        <div class="goal-top">
+                            <div class="checkbox"></div>
 
-                            <span>
-                                Complete LifeOS
+                            <div class="task-content">
+
+                                <strong>Submit project assignment</strong>
+
+                                <span>
+                                    Study · Due today
+                                </span>
+
+                            </div>
+
+                            <span class="priority high">
+                                High
                             </span>
 
-                            <strong>
-                                40%
-                            </strong>
-
                         </div>
 
-                        <div class="progress">
-
-                            <div style="width:40%"></div>
-
-                        </div>
-
-                    </div>
 
 
-                    <div class="goal">
+                        <div class="task">
 
-                        <div class="goal-top">
+                            <div class="checkbox"></div>
 
-                            <span>
-                                Read 5 books
+                            <div class="task-content">
+
+                                <strong>Work on LifeOS project</strong>
+
+                                <span>
+                                    Personal · 4:00 PM
+                                </span>
+
+                            </div>
+
+                            <span class="priority high">
+                                High
                             </span>
 
-                            <strong>
-                                60%
-                            </strong>
-
                         </div>
 
-                        <div class="progress">
 
-                            <div style="width:60%"></div>
+
+                        <div class="task">
+
+                            <div class="checkbox"></div>
+
+                            <div class="task-content">
+
+                                <strong>Buy groceries</strong>
+
+                                <span>
+                                    Personal · 6:00 PM
+                                </span>
+
+                            </div>
+
+                            <span class="priority low">
+                                Low
+                            </span>
 
                         </div>
 
                     </div>
 
 
-                    <button class="outline-button">
-                        + Add Goal
+                    <button class="add-task">
+                        <i class="fa-solid fa-plus"></i>
+                        Add task
                     </button>
 
                 </div>
 
 
 
-                <!-- HABITS -->
+                <!-- TODAY'S SCHEDULE -->
+
+                <div class="card schedule-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Today's Schedule</h3>
+                            <p>Your day at a glance.</p>
+                        </div>
+
+                        <button class="text-button">
+                            Calendar
+                        </button>
+
+                    </div>
+
+
+                    <div class="timeline">
+
+
+                        <div class="timeline-item">
+
+                            <span class="time">
+                                10:00
+                            </span>
+
+                            <div class="timeline-line"></div>
+
+                            <div class="event blue-event">
+
+                                <strong>Java Class</strong>
+
+                                <span>
+                                    Room D-421 · 10:00 - 11:00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="timeline-item">
+
+                            <span class="time">
+                                12:30
+                            </span>
+
+                            <div class="timeline-line"></div>
+
+                            <div class="event purple-event">
+
+                                <strong>Project Meeting</strong>
+
+                                <span>
+                                    Online · 12:30 - 1:15
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="timeline-item">
+
+                            <span class="time">
+                                4:00
+                            </span>
+
+                            <div class="timeline-line"></div>
+
+                            <div class="event green-event">
+
+                                <strong>LifeOS Development</strong>
+
+                                <span>
+                                    Personal project · 4:00 - 6:00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="timeline-item">
+
+                            <span class="time">
+                                7:00
+                            </span>
+
+                            <div class="timeline-line"></div>
+
+                            <div class="event orange-event">
+
+                                <strong>Workout</strong>
+
+                                <span>
+                                    Health · 7:00 - 7:45
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SECOND ROW ================= -->
+
+            <div class="three-column-grid">
+
+
+                <!-- STUDY -->
 
                 <div class="card">
 
-                    <div class="card-heading">
+                    <div class="card-header">
 
                         <div>
-                            <h2>Today's Habits</h2>
-                            <p>Keep your streak alive.</p>
+                            <h3>Study Progress</h3>
+                            <p>This week's progress.</p>
                         </div>
 
-                        <i class="fa-solid fa-fire icon"></i>
+                        <i class="fa-solid fa-graduation-cap card-icon"></i>
 
                     </div>
 
 
-                    <div class="habit">
+                    <div class="progress-item">
 
-                        <div class="habit-left">
-
-                            <div class="habit-icon">
-                                <i class="fa-solid fa-book"></i>
-                            </div>
-
-                            <div>
-                                <strong>Read</strong>
-                                <p>20 minutes</p>
-                            </div>
-
+                        <div class="progress-info">
+                            <span>Java</span>
+                            <strong>75%</strong>
                         </div>
 
-                        <div class="habit-check">
-                            ✓
+                        <div class="progress-bar">
+                            <div style="width:75%"></div>
                         </div>
 
                     </div>
 
 
-                    <div class="habit">
+                    <div class="progress-item">
 
-                        <div class="habit-left">
-
-                            <div class="habit-icon">
-                                <i class="fa-solid fa-person-walking"></i>
-                            </div>
-
-                            <div>
-                                <strong>Exercise</strong>
-                                <p>30 minutes</p>
-                            </div>
-
+                        <div class="progress-info">
+                            <span>DBMS</span>
+                            <strong>55%</strong>
                         </div>
 
-                        <div class="habit-check">
-                            ✓
+                        <div class="progress-bar">
+                            <div style="width:55%"></div>
                         </div>
 
                     </div>
 
 
-                    <div class="habit">
+                    <div class="progress-item">
 
-                        <div class="habit-left">
+                        <div class="progress-info">
+                            <span>Web Development</span>
+                            <strong>40%</strong>
+                        </div>
 
-                            <div class="habit-icon">
+                        <div class="progress-bar">
+                            <div style="width:40%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HEALTH -->
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Health</h3>
+                            <p>Today's wellness.</p>
+                        </div>
+
+                        <i class="fa-solid fa-heart-pulse card-icon"></i>
+
+                    </div>
+
+
+                    <div class="health-items">
+
+                        <div class="health-item">
+
+                            <div class="health-icon water">
                                 <i class="fa-solid fa-droplet"></i>
                             </div>
 
                             <div>
-                                <strong>Drink Water</strong>
-                                <p>8 glasses</p>
+                                <strong>Water</strong>
+                                <span>5 / 8 glasses</span>
                             </div>
 
                         </div>
 
-                        <div class="habit-check empty">
+
+                        <div class="health-item">
+
+                            <div class="health-icon sleep">
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
+
+                            <div>
+                                <strong>Sleep</strong>
+                                <span>7h 20m</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="health-item">
+
+                            <div class="health-icon activity">
+                                <i class="fa-solid fa-person-walking"></i>
+                            </div>
+
+                            <div>
+                                <strong>Activity</strong>
+                                <span>6,200 steps</span>
+                            </div>
+
                         </div>
 
                     </div>
 
+                </div>
 
-                    <button class="outline-button">
-                        View Habits
-                    </button>
+
+
+                <!-- GOALS -->
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Goals</h3>
+                            <p>What you're working towards.</p>
+                        </div>
+
+                        <i class="fa-solid fa-bullseye card-icon"></i>
+
+                    </div>
+
+
+                    <div class="goal-list">
+
+                        <div class="goal">
+
+                            <div class="goal-check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>Practice Java daily</span>
+
+                        </div>
+
+
+                        <div class="goal">
+
+                            <div class="goal-check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>Complete LifeOS project</span>
+
+                        </div>
+
+
+                        <div class="goal">
+
+                            <div class="goal-check empty"></div>
+
+                            <span>Read 20 pages</span>
+
+                        </div>
+
+
+                        <div class="goal">
+
+                            <div class="goal-check empty"></div>
+
+                            <span>Exercise 4 times this week</span>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
 
-            <div class="card calendar-card">
 
-                <div class="card-heading">
+            <!-- ================= BOTTOM ================= -->
 
-                    <div>
+            <div class="bottom-grid">
 
-                        <h2>Upcoming Events</h2>
 
-                        <p>
-                            Important things coming up.
-                        </p>
+                <!-- REMINDERS -->
+
+                <div class="card reminders-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Important Reminders</h3>
+                            <p>Don't forget these.</p>
+                        </div>
+
+                        <i class="fa-solid fa-bell card-icon"></i>
 
                     </div>
 
-                    <button class="text-button">
-                        View Calendar
-                    </button>
+
+                    <div class="reminder">
+
+                        <div class="reminder-icon red">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <strong>Assignment deadline</strong>
+                            <span>Due tomorrow at 11:59 PM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reminder">
+
+                        <div class="reminder-icon yellow">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+
+                        <div>
+                            <strong>Internet bill</strong>
+                            <span>Due in 3 days</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reminder">
+
+                        <div class="reminder-icon blue">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div>
+                            <strong>Friend's birthday</strong>
+                            <span>Saturday, September 12</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
 
-                <div class="events">
 
+                <!-- OUTFIT -->
 
-                    <div class="event">
+                <div class="card outfit-card">
 
-                        <div class="event-date">
+                    <div class="card-header">
 
-                            <strong>
-                                10
-                            </strong>
-
-                            <span>
-                                SEP
-                            </span>
-
+                        <div>
+                            <h3>Today's Outfit</h3>
+                            <p>From your wardrobe.</p>
                         </div>
 
+                        <i class="fa-solid fa-shirt card-icon"></i>
 
-                        <div class="event-info">
+                    </div>
 
-                            <h3>
-                                Java Assignment
-                            </h3>
 
-                            <p>
-                                📚 Study · 11:59 PM
-                            </p>
+                    <div class="outfit-placeholder">
 
+                        <i class="fa-solid fa-shirt"></i>
+
+                        <strong>Plan your outfit</strong>
+
+                        <span>
+                            Create an outfit from your wardrobe.
+                        </span>
+
+                        <button class="outline-button">
+                            Open Wardrobe
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Quick Add</h3>
+                            <p>Save things quickly.</p>
                         </div>
 
                     </div>
 
 
+                    <div class="quick-actions">
 
-                    <div class="event">
+                        <button>
+                            <i class="fa-solid fa-list-check"></i>
+                            Task
+                        </button>
 
-                        <div class="event-date">
+                        <button>
+                            <i class="fa-solid fa-calendar-plus"></i>
+                            Event
+                        </button>
 
-                            <strong>
-                                12
-                            </strong>
+                        <button>
+                            <i class="fa-solid fa-bullseye"></i>
+                            Goal
+                        </button>
 
-                            <span>
-                                SEP
-                            </span>
+                        <button>
+                            <i class="fa-solid fa-note-sticky"></i>
+                            Note
+                        </button>
 
-                        </div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Shopping
+                        </button>
 
-
-                        <div class="event-info">
-
-                            <h3>
-                                Project Meeting
-                            </h3>
-
-                            <p>
-                                💼 Work · 2:00 PM
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="event">
-
-                        <div class="event-date">
-
-                            <strong>
-                                15
-                            </strong>
-
-                            <span>
-                                SEP
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-info">
-
-                            <h3>
-                                Submit Project
-                            </h3>
-
-                            <p>
-                                🎯 Important · 5:00 PM
-                            </p>
-
-                        </div>
+                        <button>
+                            <i class="fa-solid fa-receipt"></i>
+                            Expense
+                        </button>
 
                     </div>
-
 
                 </div>
 
             </div>
-
 
         </section>
 
