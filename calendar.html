@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeOS - Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="calendar-page">
+
+<aside class="sidebar">
+    <div class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div><h2>LifeOS</h2><span>Your life, organized.</span></div>
+    </div>
+
+    <nav class="navigation"d
+        <p class="nav-title">MAIN</p>
+        <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-house"></i><span>My Day</span>
+        </a>
+        <a href="calendar.html" class="nav-link active">
+            <i class="fa-solid fa-calendar"></i><span>Calendar</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-bell"></i><span>Notifications</span>
+        </a>
+
+        <p class="nav-title">LIFE</p>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-list-check"></i><span>Planning</span>
+        </a>
+        <a href="study.html" class="nav-link">
+            <i class="fa-solid fa-graduation-cap"></i><span>Study</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-heart-pulse"></i><span>Health &amp; Wellness</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-user"></i><span>Personal Life</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-house"></i><span>Household</span>
+        </a>
+
+        <p class="nav-title">LIFESTYLE</p>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-shirt"></i><span>Wardrobe</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-chart-line"></i><span>Insights</span>
+        </a>
+
+        <p class="nav-title">OTHER</p>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-gear"></i><span>Settings</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="upgrade-card">
+            <i class="fa-solid fa-star"></i>
+            <h4>Make life easier</h4>
+            <p>Keep everything you need in one place.</p>
+        </div>
+    </div>
+</aside>
+
+<main class="main calendar-main">
+    <header class="topbar">
+        <div class="mobile-logo">
+            <i class="fa-solid fa-layer-group"></i> LifeOS
+        </div>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search your life...">
+        </div>
+
+        <div class="top-actions">
+            <button class="icon-button" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="profile">
+                <div class="profile-image">A</div>
+                <div class="profile-info">
+                    <strong>Asunita</strong>
+                    <span>Personal</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="calendar-content">
+        <div class="calendar-welcome">
+            <div>
+                <p class="calendar-eyebrow">YOUR TIME, YOUR PLAN</p>
+                <h1>Calendar <span>✦</span></h1>
+                <p>Stay on top of your schedule, deadlines and plans.</p>
+            </div>
+            <button class="calendar-add">
+                <i class="fa-solid fa-plus"></i> Add event
+            </button>
+        </div>
+
+        <div class="calendar-stats">
+            <div class="calendar-stat">
+                <div class="stat-icon stat-blue"><i class="fa-solid fa-calendar-day"></i></div>
+                <div><span>Events today</span><h2>3</h2></div>
+            </div>
+            <div class="calendar-stat">
+                <div class="stat-icon stat-purple"><i class="fa-solid fa-clock"></i></div>
+                <div><span>Scheduled hours</span><h2>4.5 hrs</h2></div>
+            </div>
+            <div class="calendar-stat">
+                <div class="stat-icon stat-orange"><i class="fa-solid fa-flag"></i></div>
+                <div><span>Upcoming deadlines</span><h2>2</h2></div>
+            </div>
+        </div>
+
+        <div class="calendar-layout">
+            <div class="calendar-panel">
+                <div class="calendar-panel-heading">
+                    <div>
+                        <h2>October 2026</h2>
+                        <p>Your monthly overview</p>
+                    </div>
+                    <div class="month-arrows">
+                        <button aria-label="Previous month">&lsaquo;</button>
+                        <button aria-label="Next month">&rsaquo;</button>
+                    </div>
+                </div>
+
+                <div class="mini-calendar">
+                    <div class="week-day">MON</div>
+                    <div class="week-day">TUE</div>
+                    <div class="week-day">WED</div>
+                    <div class="week-day">THU</div>
+                    <div class="week-day">FRI</div>
+                    <div class="week-day">SAT</div>
+                    <div class="week-day">SUN</div>
+
+                    <span class="day muted-day">28</span>
+                    <span class="day muted-day">29</span>
+                    <span class="day muted-day">30</span>
+                    <span class="day">1</span>
+                    <span class="day">2</span>
+                    <span class="day">3</span>
+                    <span class="day">4</span>
+
+                    <span class="day">5</span>
+                    <span class="day">6</span>
+                    <span class="day">7</span>
+                    <span class="day">8</span>
+                    <span class="day">9</span>
+                    <span class="day">10</span>
+                    <span class="day">11</span>
+
+                    <span class="day">12</span>
+                    <span class="day">13</span>
+                    <span class="day">14</span>
+                    <span class="day">15</span>
+                    <span class="day">16</span>
+                    <span class="day">17</span>
+                    <span class="day">18</span>
+
+                    <span class="day">19</span>
+                    <span class="day selected-day">20</span>
+                    <span class="day">21</span>
+                    <span class="day event-day">22<i></i></span>
+                    <span class="day">23</span>
+                    <span class="day event-day">24<i></i></span>
+                    <span class="day">25</span>
+
+                    <span class="day">26</span>
+                    <span class="day">27</span>
+                    <span class="day event-day">28<i></i></span>
+                    <span class="day">29</span>
+                    <span class="day">30</span>
+                    <span class="day">31</span>
+                    <span class="day muted-day">1</span>
+                </div>
+
+                <div class="calendar-legend">
+                    <span><i class="legend-dot dot-blue"></i> Study</span>
+                    <span><i class="legend-dot dot-purple"></i> Personal</span>
+                    <span><i class="legend-dot dot-orange"></i> Deadline</span>
+                </div>
+
+                <div class="calendar-note">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div>
+                        <strong>Plan ahead</strong>
+                        <p>Review upcoming deadlines before your week gets busy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calendar-panel schedule-panel">
+                <div class="calendar-panel-heading">
+                    <div>
+                        <h2>Today's schedule</h2>
+                        <p>Tuesday, October 20</p>
+                    </div>
+                    <span class="schedule-badge">3 events</span>
+                </div>
+
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="schedule-time">09:00<small>AM</small></div>
+                        <div class="schedule-marker marker-blue"></div>
+                        <div class="schedule-event event-blue">
+                            <span class="event-category">STUDY</span>
+                            <h3>Java practice</h3>
+                            <p><i class="fa-regular fa-clock"></i> 9:00 – 10:00 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">12:30<small>PM</small></div>
+                        <div class="schedule-marker marker-purple"></div>
+                        <div class="schedule-event event-purple">
+                            <span class="event-category">PERSONAL</span>
+                            <h3>Work on LifeOS</h3>
+                            <p><i class="fa-regular fa-clock"></i> 12:30 – 2:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">04:00<small>PM</small></div>
+                        <div class="schedule-marker marker-orange"></div>
+                        <div class="schedule-event event-orange">
+                            <span class="event-category">DEADLINE</span>
+                            <h3>Review assignment</h3>
+                            <p><i class="fa-regular fa-clock"></i> 4:00 – 4:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upcoming-heading">
+                    <h3>Coming up next</h3>
+                    <span>Next 7 days</span>
+                </div>
+
+                <div class="upcoming-event">
+                    <div class="upcoming-date"><strong>22</strong><span>OCT</span></div>
+                    <div><strong>DBMS assignment</strong><p>Study · Thursday</p></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="upcoming-event">
+                    <div class="upcoming-date"><strong>24</strong><span>OCT</span></div>
+                    <div><strong>Project review</strong><p>Personal · Saturday</p></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

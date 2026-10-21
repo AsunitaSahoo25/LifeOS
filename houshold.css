@@ -1,0 +1,607 @@
+
+.household-page {
+    --house-text: #273249;
+    --house-muted: #8791a4;
+    --house-border: #e9edf4;
+    background: #f7f8fc;
+    color: var(--house-text);
+}
+
+.house-content {
+    padding: 32px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.house-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.house-eyebrow {
+    color: #8170e8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+}
+
+.house-welcome h1 {
+    color: #273249;
+    font-size: clamp(25px, 3vw, 34px);
+    letter-spacing: -1px;
+    margin: 0 0 10px;
+}
+
+.house-welcome h1 span {
+    color: #9a8bed;
+}
+
+.house-welcome > div > p:last-child {
+    color: #8791a4;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.house-primary-btn {
+    background: #7766dc;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 17px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    white-space: nowrap;
+}
+
+.house-primary-btn:hover {
+    background: #6553ca;
+    transform: translateY(-1px);
+}
+
+.house-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 23px;
+}
+
+.house-stat-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: white;
+    border: 1px solid #edf0f6;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 5px 22px rgba(37, 48, 71, .035);
+    min-width: 0;
+}
+
+.house-stat-icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.house-purple { background: #f0edff; color: #8370e6; }
+.house-green { background: #e6f8ef; color: #36a978; }
+.house-orange { background: #fff1df; color: #e49a3b; }
+.house-blue { background: #e6f3ff; color: #459bdb; }
+
+.house-stat-card > div:last-child {
+    min-width: 0;
+}
+
+.house-stat-card span {
+    font-size: 12px;
+    color: #8791a4;
+}
+
+.house-stat-card h2 {
+    font-size: 26px;
+    margin: 7px 0;
+    color: #273249;
+}
+
+.house-stat-card small {
+    font-size: 11px;
+    color: #8791a4;
+    line-height: 1.5;
+}
+
+.house-main-grid,
+.house-bottom-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 22px;
+    margin-bottom: 23px;
+    align-items: start;
+}
+
+.house-card {
+    background: #fff;
+    border: 1px solid #edf0f6;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 5px 22px rgba(37, 48, 71, .035);
+    min-width: 0;
+}
+
+.house-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.house-card-heading h2 {
+    color: #273249;
+    font-size: 18px;
+    margin: 0 0 7px;
+}
+
+.house-card-heading p {
+    color: #8791a4;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.house-badge {
+    background: #f0edff;
+    color: #7866d8;
+    border-radius: 9px;
+    padding: 8px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.house-task-form,
+.shopping-form {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.house-task-form[hidden] {
+    display: none;
+}
+
+.house-task-form input,
+.house-task-form select,
+.shopping-form input {
+    min-width: 0;
+    width: 100%;
+    background: #fafbfe;
+    border: 1px solid #e6eaf2;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    color: #273249;
+    font: inherit;
+    font-size: 12px;
+}
+
+.house-task-form input:focus,
+.house-task-form select:focus,
+.shopping-form input:focus {
+    border-color: #9c8bed;
+}
+
+.house-task-form select {
+    width: auto;
+    max-width: 125px;
+}
+
+.house-task-form button,
+.shopping-form button {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #7766dc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.house-filter {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #edf0f6;
+    overflow-x: auto;
+}
+
+.house-filter-btn {
+    flex-shrink: 0;
+    background: transparent;
+    border: 1px solid #e8ebf3;
+    border-radius: 9px;
+    padding: 9px 12px;
+    color: #8791a4;
+    font-size: 11px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.house-filter-btn.active {
+    background: #f0edff;
+    color: #7663d7;
+    border-color: #e1dcff;
+}
+
+.house-task-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 0;
+    border-bottom: 1px solid #f0f2f7;
+    min-width: 0;
+}
+
+.house-task:last-child {
+    border-bottom: none;
+}
+
+.house-task[hidden] {
+    display: none;
+}
+
+.house-task-check {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.house-task-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.house-task-check > span {
+    width: 21px;
+    height: 21px;
+    display: grid;
+    place-items: center;
+    color: transparent;
+    border: 1.5px solid #d5dce8;
+    border-radius: 7px;
+    font-size: 10px;
+    transition: .2s;
+}
+
+.house-task-checkbox:checked + span {
+    background: #8170e8;
+    border-color: #8170e8;
+    color: white;
+}
+
+.house-task-checkbox:focus-visible + span {
+    outline: 2px solid #8170e8;
+    outline-offset: 3px;
+}
+
+.house-task-icon {
+    display: grid;
+    place-items: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.cleaning-icon { background: #f0edff; color: #8773e5; }
+.laundry-icon { background: #e8f4ff; color: #4d9cdb; }
+.kitchen-icon { background: #fff0df; color: #dc9944; }
+.other-icon { background: #e5f7ed; color: #3ca878; }
+
+.house-task-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.house-task-info strong {
+    font-size: 12px;
+    font-weight: 600;
+    color: #344057;
+    overflow-wrap: anywhere;
+}
+
+.house-task-info span {
+    color: #8791a4;
+    font-size: 11px;
+}
+
+.house-task.is-completed .house-task-info strong {
+    text-decoration: line-through;
+    color: #9ba4b4;
+}
+
+.delete-house-task {
+    border: none;
+    background: transparent;
+    color: #b2bac8;
+    padding: 8px;
+    cursor: pointer;
+    opacity: .65;
+    flex-shrink: 0;
+    transition: .2s;
+}
+
+.delete-house-task:hover {
+    color: #e16e79;
+    opacity: 1;
+}
+
+.house-heading-icon {
+    display: grid;
+    place-items: center;
+    background: #f0edff;
+    color: #8370e6;
+    border-radius: 12px;
+    width: 43px;
+    height: 43px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.shopping-form {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf0f6;
+}
+
+.shopping-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f2f7;
+    cursor: pointer;
+    font-size: 12px;
+    color: #344057;
+}
+
+.shopping-item:last-child {
+    border-bottom: none;
+}
+
+.shopping-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.shopping-check-icon {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #d5dce8;
+    border-radius: 6px;
+    color: transparent;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.shopping-checkbox:checked + .shopping-check-icon {
+    background: #39ad7c;
+    border-color: #39ad7c;
+    color: white;
+}
+
+.shopping-checkbox:focus-visible + .shopping-check-icon {
+    outline: 2px solid #39ad7c;
+    outline-offset: 3px;
+}
+
+.shopping-checkbox:checked ~ span:last-child {
+    color: #9ba4b4;
+    text-decoration: line-through;
+}
+
+.shopping-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #edf0f6;
+    padding-top: 17px;
+    margin-top: 5px;
+}
+
+.shopping-footer span {
+    color: #8791a4;
+    font-size: 11px;
+}
+
+.shopping-footer button {
+    background: transparent;
+    border: none;
+    color: #7968dc;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.routine-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.routine-item {
+    display: grid;
+    grid-template-columns: 76px 12px minmax(0, 1fr);
+    gap: 12px;
+    padding: 17px 0;
+    border-bottom: 1px solid #f0f2f7;
+}
+
+.routine-item:last-child {
+    border-bottom: none;
+}
+
+.routine-time {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    color: #8791a4;
+    padding-top: 2px;
+}
+
+.routine-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.routine-purple { background: #8976e8; }
+.routine-blue { background: #58a8e6; }
+.routine-green { background: #49b787; }
+
+.routine-item strong {
+    font-size: 12px;
+    color: #344057;
+}
+
+.routine-item p {
+    font-size: 11px;
+    color: #8791a4;
+    line-height: 1.6;
+    margin: 6px 0 0;
+}
+
+.home-tip-card {
+    background: linear-gradient(145deg, #f4f1ff, #fbfaff);
+    border-color: #eae5ff;
+}
+
+.home-tip-icon {
+    display: grid;
+    place-items: center;
+    width: 53px;
+    height: 53px;
+    border-radius: 16px;
+    background: #e8e2ff;
+    color: #8170e8;
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.home-tip-card h2 {
+    font-size: 23px;
+    line-height: 1.45;
+    letter-spacing: -.5px;
+    color: #302d51;
+    margin: 12px 0;
+}
+
+.home-tip-card > p:not(.house-eyebrow) {
+    color: #827e9d;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.home-tip-footer {
+    border-top: 1px solid #e7e1fb;
+    padding-top: 17px;
+    margin-top: 22px;
+    color: #7f6bd8;
+    font-size: 12px;
+}
+
+.home-tip-footer i {
+    margin-right: 7px;
+}
+
+@media (max-width: 1200px) {
+    .house-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .house-main-grid,
+    .house-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .house-content {
+        padding: 22px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .house-welcome {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .house-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .house-card,
+    .house-stat-card {
+        padding: 17px;
+    }
+
+    .house-task {
+        gap: 8px;
+    }
+
+    .house-task-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .house-task-form {
+        flex-wrap: wrap;
+    }
+
+    .house-task-form input {
+        flex: 1 1 100%;
+    }
+
+    .house-task-form select {
+        flex: 1;
+        max-width: none;
+    }
+
+    .routine-item {
+        grid-template-columns: 65px 10px minmax(0, 1fr);
+        gap: 8px;
+    }
+}
